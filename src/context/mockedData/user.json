@@ -1,0 +1,20 @@
+{
+  "login": "Maciejlys",
+  "id": 62946872,
+  "node_id": "MDQ6VXNlcjYyOTQ2ODcy",
+  "avatar_url": "https://avatars.githubusercontent.com/u/62946872?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/Maciejlys",
+  "html_url": "https://github.com/Maciejlys",
+  "followers_url": "https://api.github.com/users/Maciejlys/followers",
+  "following_url": "https://api.github.com/users/Maciejlys/following{/other_user}",
+  "gists_url": "https://api.github.com/users/Maciejlys/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/Maciejlys/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/Maciejlys/subscriptions",
+  "organizations_url": "https://api.github.com/users/Maciejlys/orgs",
+  "repos_url": "https://api.github.com/users/Maciejlys/repos",
+  "events_url": "https://api.github.com/users/Maciejlys/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/Maciejlys/received_events",
+  "type": "User",
+  "site_admin": false
+}

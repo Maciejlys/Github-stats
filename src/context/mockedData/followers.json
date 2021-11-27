@@ -1,0 +1,22 @@
+[
+  {
+    "login": "majszixo",
+    "id": 80783186,
+    "node_id": "MDQ6VXNlcjgwNzgzMTg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/80783186?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/majszixo",
+    "html_url": "https://github.com/majszixo",
+    "followers_url": "https://api.github.com/users/majszixo/followers",
+    "following_url": "https://api.github.com/users/majszixo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/majszixo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/majszixo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/majszixo/subscriptions",
+    "organizations_url": "https://api.github.com/users/majszixo/orgs",
+    "repos_url": "https://api.github.com/users/majszixo/repos",
+    "events_url": "https://api.github.com/users/majszixo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/majszixo/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+]
