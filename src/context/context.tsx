@@ -4,9 +4,22 @@ import userMock from "./mockedData/user.json";
 import reposMock from "./mockedData/repos.json";
 import followersMock from "./mockedData/followers.json";
 
-const url = "https://course-api.netlify.app/api/react-useReducer-cart-project";
+interface StoreType {
+  user: object;
+  repos: object;
+  followers: object;
+  error: object;
+  searchGithubUser?: (user: string) => void;
+  isLoading: boolean;
+}
 
-const AppContext = React.createContext({});
+const AppContext = React.createContext<StoreType>({
+  user: {},
+  repos: {},
+  followers: {},
+  error: {},
+  isLoading: false,
+});
 
 const AppProvider = ({ children }: any) => {
   const [user, setUser] = useState(userMock);
@@ -52,7 +65,6 @@ const AppProvider = ({ children }: any) => {
     setError({ show, msg });
   };
   useEffect(() => {
-    console.log(user);
     // searchGithubUser("maciejlys");
   }, []);
 

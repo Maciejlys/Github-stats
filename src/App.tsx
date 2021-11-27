@@ -1,14 +1,18 @@
-import React, { useContext } from "react";
-import { Flex } from "./Styled-components/Flex";
+import React from "react";
+import { SearchBar } from "./components/SearchBar";
+import { User } from "./components/User";
+import { GlobalStyle } from "./Styled-components/GlobalStyle";
 import { MainStyle } from "./Styled-components/MainStyle";
 
 function App() {
   return (
-    <MainStyle>
-      <Flex>
-        <h1>test</h1>
-      </Flex>
-    </MainStyle>
+    <>
+      <GlobalStyle />
+      <MainStyle>
+        <SearchBar />
+        <User />
+      </MainStyle>
+    </>
   );
 }
 
