@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useContext } from "react";
+import { AppContext } from "../context/context";
 import { Flex } from "../Styled-components/Flex";
 import { SearchBarStyles } from "../Styled-components/SearchBarStyles";
 
@@ -9,8 +10,10 @@ export const SearchBar: React.FC<SearchBarProps> = () => {
   const [item, setItem] = useState("");
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    searchGithubUser(item);
     inputField.current.focus();
   };
+  const { limit, searchGithubUser } = useContext(AppContext);
 
   return (
     <SearchBarStyles>
@@ -26,6 +29,7 @@ export const SearchBar: React.FC<SearchBarProps> = () => {
             autoFocus
           />
           <button type="submit">Add</button>
+          <h1>Requests left: {limit}/60</h1>
         </Flex>
       </form>
     </SearchBarStyles>

@@ -4,20 +4,13 @@ import userMock from "./mockedData/user.json";
 import reposMock from "./mockedData/repos.json";
 import followersMock from "./mockedData/followers.json";
 
-interface StoreType {
-  user: object;
-  repos: object;
-  followers: object;
-  error: object;
-  searchGithubUser?: (user: string) => void;
-  isLoading: boolean;
-}
-
-const AppContext = React.createContext<StoreType>({
-  user: {},
-  repos: {},
-  followers: {},
-  error: {},
+const AppContext = React.createContext({
+  user: userMock,
+  repos: reposMock,
+  followers: followersMock,
+  error: { show: false, msg: "" },
+  limit: 60,
+  searchGithubUser: (user: string) => {},
   isLoading: false,
 });
 
@@ -25,6 +18,7 @@ const AppProvider = ({ children }: any) => {
   const [user, setUser] = useState(userMock);
   const [repos, setRepos] = useState(reposMock);
   const [followers, setFollowers] = useState(followersMock);
+  const [limit, setLimit] = useState(60);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState({ show: false, msg: "" });
 
@@ -58,6 +52,7 @@ const AppProvider = ({ children }: any) => {
     } else {
       toggleError(true, "there is no user with that username");
     }
+    checkLimit();
     setIsLoading(false);
   };
 
@@ -65,13 +60,28 @@ const AppProvider = ({ children }: any) => {
     setError({ show, msg });
   };
   useEffect(() => {
-    // searchGithubUser("maciejlys");
+    checkLimit();
   }, []);
+
+  const checkLimit = () => {
+    axios(`${rootUrl}/rate_limit`)
+      .then(({ data }) => {
+        let {
+          rate: { remaining },
+        } = data;
+        setLimit(remaining);
+        if (remaining === 0) {
+          toggleError(true, "sorry, you have exceeded your hourly rate limit!");
+        }
+      })
+      .catch((err) => console.log(err));
+  };
 
   return (
     <AppContext.Provider
       value={{
         user,
+        limit,
         repos,
         followers,
         error,
