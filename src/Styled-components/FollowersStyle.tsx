@@ -1,22 +1,15 @@
 import styled from "styled-components";
 
 export const FollowersStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: flex-start;
   height: 20rem;
-  width: 35rem;
-  padding: 2rem;
   background-color: #161b22;
   border-radius: 1rem;
   overflow-x: auto;
-  ::-webkit-scrollbar {
-    width: 1em;
-  }
-
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
+  p {
+    width: 12rem;
   }
 `;

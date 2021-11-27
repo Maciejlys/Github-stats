@@ -1,11 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+
 body{
     background-color: #0d1117;
     color: white;
 }
-
 img {
     width: 75px;
     height: 75px;

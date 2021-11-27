@@ -1,5 +1,6 @@
 import React from "react";
 import { Flex } from "../Styled-components/Flex";
+import styled from "styled-components";
 
 interface FollowerProps {
   login: string;
@@ -22,11 +23,24 @@ interface FollowerProps {
   site_admin: boolean;
 }
 
-export const Follower: React.FC<FollowerProps> = ({ avatar_url, login }) => {
+export const Follower: React.FC<FollowerProps> = ({
+  avatar_url,
+  login,
+  html_url,
+}) => {
   return (
-    <Flex gap="1rem" just="flex-start">
-      <img src={avatar_url} alt={login} />
-      <p>{login}</p>
-    </Flex>
+    <FollowerStyle>
+      <Flex gap="5rem" just="flex-start">
+        <img src={avatar_url} alt={login} />
+        <p>{login}</p>
+        <a href={html_url}>Follow</a>
+      </Flex>
+    </FollowerStyle>
   );
 };
+
+export const FollowerStyle = styled.div`
+  border: solid 1px #30363d;
+  border-radius: 1rem;
+  padding: 1rem;
+`;
