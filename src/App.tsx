@@ -15,8 +15,7 @@ function App() {
       <GlobalStyle />
       <MainStyle>
         <SearchBar />
-        {show ? <Error /> : ""}
-        {!show && isLoading ? <Loading /> : <User />}
+        {isLoading ? <Loading /> : show ? <Error /> : <User />}
       </MainStyle>
     </>
   );
