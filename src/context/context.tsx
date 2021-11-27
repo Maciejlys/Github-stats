@@ -25,6 +25,7 @@ const AppProvider = ({ children }: any) => {
   const rootUrl = "https://api.github.com";
 
   const searchGithubUser = async (user: string) => {
+    toggleError(false, "");
     setIsLoading(true);
     const response = await axios(`${rootUrl}/users/${user}`).catch((err) =>
       console.log(err)

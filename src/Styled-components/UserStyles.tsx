@@ -4,7 +4,7 @@ export const UserStyles = styled.article`
   width: 35rem;
   padding: 2rem;
   border-radius: 1rem;
-  background-color: white;
+  background-color: #161b22;
   height: 20rem;
 `;
 

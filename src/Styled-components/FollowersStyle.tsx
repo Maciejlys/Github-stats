@@ -4,7 +4,7 @@ export const FollowersStyle = styled.div`
   height: 20rem;
   width: 35rem;
   padding: 2rem;
-  background-color: white;
+  background-color: #161b22;
   border-radius: 1rem;
   overflow-x: auto;
   ::-webkit-scrollbar {

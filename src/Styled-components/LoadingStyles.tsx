@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const LoadingStyles = styled.div`
-  color: #000;
+  color: white;
   font-size: 90px;
   text-indent: -9999em;
   overflow: hidden;

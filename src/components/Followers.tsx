@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { AppContext } from "../context/context";
-import { Flex } from "../Styled-components/Flex";
 import { FollowersStyle } from "../Styled-components/FollowersStyle";
 import { Follower } from "./Follower";
 
