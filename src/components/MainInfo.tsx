@@ -14,12 +14,14 @@ export const MainInfo: React.FC = () => {
 };
 
 const MainInfoStyles = styled.div`
+  margin: 2rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: row;
   gap: 3rem;
   @media (max-width: 960px) {
+    align-items: center;
     flex-direction: column;
   }
 `;

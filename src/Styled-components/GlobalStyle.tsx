@@ -4,6 +4,12 @@ export const GlobalStyle = createGlobalStyle`
 body{
     background-color: #f1f5f8;
 }
+
+img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
 p{
     margin: 0;
     padding: 0;

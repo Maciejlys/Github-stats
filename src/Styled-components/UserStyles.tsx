@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
 export const UserStyles = styled.article`
-  width: auto;
+  width: 35rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  height: 20rem;
 `;
 
 export const Header = styled.header`
-  img {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-  }
   p {
     width: 20rem;
   }
