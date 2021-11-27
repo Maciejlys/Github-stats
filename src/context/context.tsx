@@ -25,7 +25,6 @@ const AppProvider = ({ children }: any) => {
   const rootUrl = "https://api.github.com";
 
   const searchGithubUser = async (user: string) => {
-    toggleError();
     setIsLoading(true);
     const response = await axios(`${rootUrl}/users/${user}`).catch((err) =>
       console.log(err)
@@ -50,13 +49,13 @@ const AppProvider = ({ children }: any) => {
         })
         .catch((err) => console.log(err));
     } else {
-      toggleError(true, "there is no user with that username");
+      toggleError(true, "There is no user with such username");
     }
     checkLimit();
     setIsLoading(false);
   };
 
-  const toggleError = (show = false, msg = "") => {
+  const toggleError = (show: boolean, msg: string) => {
     setError({ show, msg });
   };
   useEffect(() => {

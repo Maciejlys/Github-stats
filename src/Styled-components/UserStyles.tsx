@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const UserStyles = styled.article`
-  width: 100%;
+  width: auto;
 `;
 
 export const Header = styled.header`

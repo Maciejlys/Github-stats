@@ -10,6 +10,8 @@ export const SearchBar: React.FC<SearchBarProps> = () => {
   const [item, setItem] = useState("");
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (item === "") return;
+
     searchGithubUser(item);
     inputField.current.focus();
   };
