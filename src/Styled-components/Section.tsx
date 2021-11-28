@@ -8,13 +8,12 @@ export const Section = styled.div`
   border-radius: 0;
   background-color: #161b22;
   height: 20rem;
-
   overflow-x: hidden;
   overflow-y: auto;
-
   @media (max-width: 30rem) {
     height: auto;
   }
+
   ::-webkit-scrollbar {
     width: 1em;
     position: relative;
