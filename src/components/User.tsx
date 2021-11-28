@@ -7,7 +7,7 @@ import { FaRegBuilding } from "react-icons/fa";
 
 export const User: React.FC = () => {
   const { user } = useContext(AppContext);
-  const { avatar_url, html_url, name, company, bio, location } = user;
+  const { avatar_url, html_url, name, company, bio, location, blog } = user;
   return (
     <Section>
       <UserStyles>
@@ -27,6 +27,10 @@ export const User: React.FC = () => {
           <div className="info">
             <FaRegBuilding />
             <p>{company || "None"}</p>
+          </div>
+          <div className="info">
+            <FaRegBuilding />
+            <p>{blog || "None"}</p>
           </div>
         </div>
       </UserStyles>

@@ -72,6 +72,14 @@ const Item: React.FC<ItemProps> = ({ icon, label, value, color }) => {
 };
 
 const Wrapper = styled.section`
+  max-width: 70rem;
+  @media (max-width: 1100px) {
+    max-width: 40rem;
+  }
+
+  @media (max-width: 500px) {
+    max-width: 40rem;
+  }
   display: flex;
   justify-content: center;
   gap: 2rem 3rem;
@@ -81,7 +89,7 @@ const Wrapper = styled.section`
     flex: 1 1 10%;
   }
   .item {
-    max-width: 50%;
+    max-width: 70%;
     border-radius: 0.25rem;
     padding: 1rem 2rem;
     background: #161b22;
