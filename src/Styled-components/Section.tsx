@@ -9,12 +9,12 @@ export const Section = styled.div`
   background-color: #161b22;
   height: 20rem;
 
-  @media (min-width: 30rem) {
-    min-width: auto;
-  }
   overflow-x: hidden;
-
   overflow-y: auto;
+
+  @media (max-width: 30rem) {
+    height: auto;
+  }
   ::-webkit-scrollbar {
     width: 1em;
     position: relative;

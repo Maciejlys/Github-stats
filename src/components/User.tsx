@@ -1,36 +1,34 @@
 import React, { useContext } from "react";
 import { AppContext } from "../context/context";
-import { Flex } from "../Styled-components/Flex";
 import { Section } from "../Styled-components/Section";
 import { Header, UserStyles } from "../Styled-components/UserStyles";
+import { MdLocationOn } from "react-icons/md";
+import { FaRegBuilding } from "react-icons/fa";
 
-interface UserProps {}
-
-export const User: React.FC<UserProps> = () => {
+export const User: React.FC = () => {
   const { user } = useContext(AppContext);
-  const {
-    avatar_url,
-    html_url,
-    name,
-    login,
-    company,
-    blog,
-    bio,
-    location,
-    twitter_username,
-  } = user;
+  const { avatar_url, html_url, name, company, bio, location } = user;
   return (
     <Section>
       <UserStyles>
         <Header>
           <img src={avatar_url} alt={name} />
-          <p>{name}</p>
+          <p>{name || "John Doe"}</p>
           <a href={html_url} target="_blank">
             Follow
           </a>
         </Header>
-        <p>{location}</p>
-        <p>{company}</p>
+        <div className="bio">{bio}</div>
+        <div className="container">
+          <div className="info">
+            <MdLocationOn />
+            <p>{location || "Thats a secret"}</p>
+          </div>
+          <div className="info">
+            <FaRegBuilding />
+            <p>{company || "None"}</p>
+          </div>
+        </div>
       </UserStyles>
     </Section>
   );
