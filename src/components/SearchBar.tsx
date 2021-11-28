@@ -30,7 +30,7 @@ export const SearchBar: React.FC<SearchBarProps> = () => {
             onChange={(e) => setItem(e.target.value)}
             autoFocus
           />
-          <button type="submit">Add</button>
+          <button type="submit">Search</button>
           <h1>Requests left: {limit}/60</h1>
         </Flex>
       </form>

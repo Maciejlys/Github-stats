@@ -23,16 +23,11 @@ export const User: React.FC<UserProps> = () => {
     <Section>
       <UserStyles>
         <Header>
-          <Flex dir="row" gap="1rem" just="flex-start">
-            <img src={avatar_url} alt={name} />
-            <Flex dir="column" gap="0.5rem">
-              <p>{name}</p>
-              <p>@{login}</p>
-            </Flex>
-            <a href={html_url} target="_blank">
-              Follow
-            </a>
-          </Flex>
+          <img src={avatar_url} alt={name} />
+          <p>{name}</p>
+          <a href={html_url} target="_blank">
+            Follow
+          </a>
         </Header>
         <p>{location}</p>
         <p>{company}</p>

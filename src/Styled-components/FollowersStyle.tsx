@@ -8,6 +8,7 @@ export const FollowersStyle = styled.div`
   justify-content: flex-start;
   height: 20rem;
   background-color: #161b22;
-  width: 100%;
-  margin: 1rem;
+  width: 90%;
+  height: 90%;
+  padding: 1rem 0;
 `;
