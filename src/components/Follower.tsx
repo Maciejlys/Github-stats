@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex } from "../Styled-components/Flex";
-import styled from "styled-components";
+import { FollowerStyle } from "../Styled-components/FollowerStyle";
 
 interface FollowerProps {
   login: string;
@@ -30,17 +30,9 @@ export const Follower: React.FC<FollowerProps> = ({
 }) => {
   return (
     <FollowerStyle>
-      <Flex gap="5rem" just="flex-start">
-        <img src={avatar_url} alt={login} />
-        <p>{login}</p>
-        <a href={html_url}>Follow</a>
-      </Flex>
+      <img src={avatar_url} alt={login} />
+      <p>{login}</p>
+      <a href={html_url}>Follow</a>
     </FollowerStyle>
   );
 };
-
-export const FollowerStyle = styled.div`
-  border: solid 1px #30363d;
-  border-radius: 1rem;
-  padding: 1rem;
-`;

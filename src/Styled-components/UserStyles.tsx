@@ -1,16 +1,21 @@
 import styled from "styled-components";
 
 export const UserStyles = styled.article`
-  width: 35rem;
-  border-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
   background-color: #161b22;
-  height: 20rem;
+  width: 100%;
+  height: 100%;
+  background-color: red;
 `;
 
 export const Header = styled.header`
-  p {
-    width: 20rem;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
   a {
     color: #ffffff;
     border-radius: 0%;

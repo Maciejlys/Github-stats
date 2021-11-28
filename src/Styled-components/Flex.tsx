@@ -12,4 +12,5 @@ export const Flex = styled.div`
   justify-content: ${({ just }: MyProps) => just || "center"};
   flex-direction: ${({ dir }: MyProps) => dir};
   gap: ${({ gap }: MyProps) => gap};
+  flex-wrap: wrap;
 `;

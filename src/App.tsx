@@ -4,6 +4,7 @@ import { Error } from "./components/Error";
 import { Loading } from "./components/Loading";
 import { SearchBar } from "./components/SearchBar";
 import { AppContext } from "./context/context";
+import { Flex } from "./Styled-components/Flex";
 import { GlobalStyle } from "./Styled-components/GlobalStyle";
 import { MainStyle } from "./Styled-components/MainStyle";
 

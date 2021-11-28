@@ -1,26 +1,34 @@
 import styled from "styled-components";
 
 export const Section = styled.div`
-  width: 35rem;
-  padding: 0 2rem 2rem 2rem;
-  border-radius: 0 1rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  border-radius: 0;
   background-color: #161b22;
   height: 20rem;
 
-  h4 {
-    left: -2rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  @media (min-width: 30rem) {
+    min-width: auto;
+  }
+  overflow-x: hidden;
+
+  overflow-y: auto;
+  ::-webkit-scrollbar {
+    width: 1em;
     position: relative;
-    top: -2rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+  }
+  a {
     border-radius: 0;
-    background-color: #161b22;
-    width: 7rem;
-    height: 2rem;
-    border-radius: 1rem 1rem 0 0;
   }
 `;
