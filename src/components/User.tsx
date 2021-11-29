@@ -4,6 +4,7 @@ import { Section } from "../Styled-components/Section";
 import { Header, UserStyles } from "../Styled-components/UserStyles";
 import { MdLocationOn } from "react-icons/md";
 import { FaRegBuilding } from "react-icons/fa";
+import { BsLink } from "react-icons/bs";
 
 export const User: React.FC = () => {
   const { user } = useContext(AppContext);
@@ -14,23 +15,23 @@ export const User: React.FC = () => {
         <Header>
           <img src={avatar_url} alt={name} />
           <p>{name || "John Doe"}</p>
-          <a href={html_url} target="_blank">
+          <a className="follow" href={html_url} target="_blank">
             Follow
           </a>
         </Header>
-        <div className="bio">{bio}</div>
         <div className="container">
+          <div className="bio">{bio}</div>
           <div className="info">
             <MdLocationOn />
             <p>{location || "Thats a secret"}</p>
           </div>
           <div className="info">
             <FaRegBuilding />
-            <p>{company || "None"}</p>
+            <p>{company}</p>
           </div>
           <div className="info">
-            <FaRegBuilding />
-            <p>{blog || "None"}</p>
+            <BsLink />
+            <p>{blog ? <a href={blog}>{blog}</a> : ""}</p>
           </div>
         </div>
       </UserStyles>

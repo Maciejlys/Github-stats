@@ -8,17 +8,39 @@ export const UserStyles = styled.article`
   background-color: #161b22;
   width: 100%;
   height: 100%;
+
   .container {
-    display: flex;
-    gap: 0.5em;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "one one one"
+      "two three four";
+
+    .bio {
+      grid-area: one;
+    }
+    .info:nth-child(1) {
+      grid-area: two;
+    }
+    .info:nth-child(2) {
+      grid-area: three;
+    }
+    .info:nth-child(3) {
+      grid-area: four;
+    }
+    @media (max-width: 50rem) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four";
+    }
   }
   div .info {
-    gap: 0.5em;
     display: flex;
+    gap: 0.5em;
     flex-direction: row;
     align-items: center;
     justify-content: center;

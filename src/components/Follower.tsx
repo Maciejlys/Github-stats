@@ -32,7 +32,9 @@ export const Follower: React.FC<FollowerProps> = ({
     <FollowerStyle>
       <img src={avatar_url} alt={login} />
       <p>{login}</p>
-      <a href={html_url}>Follow</a>
+      <a className="follow" href={html_url}>
+        Follow
+      </a>
     </FollowerStyle>
   );
 };

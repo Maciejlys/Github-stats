@@ -15,7 +15,7 @@ p{
     margin: 0;
     padding: 0;
 }
-  button, a {
+  button, .follow {
     border-radius: 0 0.5rem 0.5rem 0;
     width: 6rem;
     appearance: none;
@@ -41,25 +41,27 @@ p{
     vertical-align: middle;
     white-space: nowrap;
   }
-  button, a:focus:not(:focus-visible):not(.focus-visible) {
+  button, .follow:focus:not(:focus-visible):not(.focus-visible) {
     box-shadow: none;
     outline: none;
   }
-  button,a :hover {
+  button,.follow :hover {
     background-color: #2c974b;
   }
-  button,a:focus {
+  button,.follow:focus {
     box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
     outline: none;
   }
-  button,a:disabled {
+  button,.follow:disabled {
     background-color: #94d3a2;
     border-color: rgba(27, 31, 35, 0.1);
     color: rgba(255, 255, 255, 0.8);
     cursor: default;
   }
-  button,a:active {
+  button,.follow:active {
     background-color: #298e46;
     box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
   }
+
+  a{ color: blue}
 `;
