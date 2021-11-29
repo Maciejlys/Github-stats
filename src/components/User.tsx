@@ -11,6 +11,7 @@ export const User: React.FC = () => {
   const { avatar_url, html_url, name, company, bio, location, blog } = user;
   return (
     <Section>
+      <h4>User</h4>
       <UserStyles>
         <Header>
           <img src={avatar_url} alt={name} />

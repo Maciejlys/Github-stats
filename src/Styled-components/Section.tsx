@@ -8,14 +8,20 @@ export const Section = styled.div`
   border-radius: 0;
   background-color: #161b22;
   height: 20rem;
-  padding: 1rem;
+  padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  @media (max-width: 50rem) {
-    height: auto;
-  }
-  @media (max-width: 30rem) {
-    height: auto;
+
+  h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0.3rem;
+    background-color: #161b22;
+    border-bottom: 1px solid white;
+    margin-bottom: 0.5rem;
   }
 
   ::-webkit-scrollbar {

@@ -10,6 +10,7 @@ export const Followers: React.FC<FollowersProps> = () => {
   const { followers } = useContext(AppContext);
   return (
     <Section>
+      <h4>Followers</h4>
       <FollowersStyle>
         {followers.map((follower) => {
           return <Follower key={follower.id} {...follower} />;

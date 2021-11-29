@@ -53,19 +53,7 @@ export const Header = styled.header`
   height: 40%;
   display: flex;
   justify-content: center;
-  @media (max-width: 600px) {
-    padding: 1rem;
-    height: 10rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    p {
-      padding: 0;
-      width: 100%;
-      text-align: center;
-    }
-  }
+
   p {
     width: 40%;
     padding: 0 0 0 1vw;
