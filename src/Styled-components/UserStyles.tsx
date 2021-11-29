@@ -12,38 +12,32 @@ export const UserStyles = styled.article`
   .container {
     display: grid;
     gap: 0.5rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-      "one one one"
-      "two three four";
-
-    .bio {
-      grid-area: one;
-    }
-    .info:nth-child(1) {
-      grid-area: two;
-    }
-    .info:nth-child(2) {
-      grid-area: three;
-    }
-    .info:nth-child(3) {
-      grid-area: four;
-    }
-    @media (max-width: 50rem) {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "one"
-        "two"
-        "three"
-        "four";
-    }
+      "one"
+      "two"
+      "three"
+      "four";
   }
+  .bio {
+    grid-area: one;
+  }
+  .info:nth-child(1) {
+    grid-area: two;
+  }
+  .info:nth-child(2) {
+    grid-area: three;
+  }
+  .info:nth-child(3) {
+    grid-area: four;
+  }
+
   div .info {
     display: flex;
     gap: 0.5em;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-basis: 100%;
     padding: 1rem 0;
   }
@@ -83,7 +77,7 @@ export const Header = styled.header`
     display: flex;
     flex-direction: column;
   }
-  a {
+  a .follow {
     color: #ffffff;
     border-radius: 0%;
   }
