@@ -6,8 +6,8 @@ It shows some basic informations:
 - amount of public repos
 - amount of followers
 - amount of people followed
-- gists
-- basic informations about users and
+- amount of gists
+- basic informations about users
 - list of all followers
 - chart of primary languages from 100 public repos
 - chart of top 5 starred languages
