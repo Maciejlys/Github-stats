@@ -1,6 +1,7 @@
 # About the project
 
 Small web app that shows basic information about specific github user.\
+
 It shows some basic informations:
 - amount of public repos
 - amount of followers
@@ -15,6 +16,7 @@ It shows some basic informations:
 
 I learned alot while doing this project.\
 That was my first time working with external api.\
+
 My goal was to use:
 - axios
 - context
