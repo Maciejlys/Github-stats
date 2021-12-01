@@ -1,6 +1,6 @@
 # About the project
 
-Small web app that is used to search for github users.
+Small web app that is used to search for github users.\
 It shows some basic informations:
 
 - amount of public repos
