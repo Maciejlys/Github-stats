@@ -23,6 +23,14 @@ My goal was to use:
 - grid
 - charts
 
+# What was used in this project?
+
+- axios
+- context api
+- css grid
+- [chartjs](https://www.chartjs.org/)
+- [styled-components](https://styled-components.com/)
+
 # What would I change?
 
 I think I learned alot while doing this projcet, and thats why \
