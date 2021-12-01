@@ -2,9 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../context/context";
 import { Flex } from "../Styled-components/Flex";
 
-interface ErrorProps {}
-
-export const Error: React.FC<ErrorProps> = () => {
+export const Error: React.FC = () => {
   const { error } = useContext(AppContext);
   return (
     <Flex>

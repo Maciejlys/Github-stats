@@ -5,9 +5,7 @@ import styled from "styled-components";
 import { AppContext } from "../context/context";
 import { ReposInfo } from "./ReposInfo";
 
-interface ContentProps {}
-
-export const Content: React.FC<ContentProps> = () => {
+export const Content: React.FC = () => {
   const { user } = useContext(AppContext);
   const { login } = user;
   return (

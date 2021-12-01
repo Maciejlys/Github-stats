@@ -3,9 +3,7 @@ import { AppContext } from "../context/context";
 import { Flex } from "../Styled-components/Flex";
 import { SearchBarStyles } from "../Styled-components/SearchBarStyles";
 
-interface SearchBarProps {}
-
-export const SearchBar: React.FC<SearchBarProps> = () => {
+export const SearchBar: React.FC = () => {
   const inputField = useRef(document.createElement("input"));
   const [item, setItem] = useState("");
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {

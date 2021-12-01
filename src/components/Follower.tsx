@@ -1,5 +1,4 @@
 import React from "react";
-import { Flex } from "../Styled-components/Flex";
 import { FollowerStyle } from "../Styled-components/FollowerStyle";
 
 interface FollowerProps {

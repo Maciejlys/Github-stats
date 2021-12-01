@@ -4,9 +4,7 @@ import { FollowersStyle } from "../Styled-components/FollowersStyle";
 import { Section } from "../Styled-components/Section";
 import { Follower } from "./Follower";
 
-interface FollowersProps {}
-
-export const Followers: React.FC<FollowersProps> = () => {
+export const Followers: React.FC = () => {
   const { followers } = useContext(AppContext);
   return (
     <Section>

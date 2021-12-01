@@ -5,9 +5,7 @@ import { FiUsers, FiUserPlus } from "react-icons/fi";
 import styled from "styled-components";
 import { Flex } from "../Styled-components/Flex";
 
-interface HighlightedInfoProps {}
-
-export const HighlightedInfo: React.FC<HighlightedInfoProps> = () => {
+export const HighlightedInfo: React.FC = () => {
   const { user } = React.useContext(AppContext);
   const { public_repos, followers, following, public_gists } = user;
 
