@@ -60,7 +60,7 @@ const AppProvider = ({ children }: any) => {
     setError({ show, msg });
   };
   useEffect(() => {
-    checkLimit();
+    searchGithubUser("Maciejlys");
   }, []);
 
   const checkLimit = () => {
