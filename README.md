@@ -14,8 +14,8 @@ It shows some basic informations:
 
 # What have I learned?
 
-I learned alot while doing this project.
-That was my first time working with external api.
+I learned alot while doing this project.\
+That was my first time working with external api.\
 My goal was to use:
 
 - axios
