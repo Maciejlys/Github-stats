@@ -17,13 +17,27 @@ export const arrToInstanceCountObj = (arr: string[]) =>
     obj[e] = (obj[e] || 0) + 1;
     return obj;
   }, {});
-export const getChartData = (lang: PieChartProps) => {
+
+export const getChartDataFromObj = (lang: PieChartProps) => {
   const labels = [];
   const values = [];
   for (const [key, value] of Object.entries(lang)) {
     if (key != "null") {
       labels.push(key);
       values.push(value);
+    }
+  }
+  return { labels, values };
+};
+
+export const getChartDataFromArr = (items: any) => {
+  const labels: string[] = [];
+  const values: number[] = [];
+  for (let i = 0; i < items.length; i++) {
+    const { name, stargazers_count } = items[i];
+    if (stargazers_count != 0) {
+      labels.push(name);
+      values.push(stargazers_count);
     }
   }
   return { labels, values };
