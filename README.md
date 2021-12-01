@@ -12,17 +12,6 @@ It shows some basic informations:
 - chart of primary languages from 100 public repos
 - chart of top 5 starred languages
 
-# What have I learned?
-
-I learned alot while doing this project.\
-That was my first time working with external api.\
-
-My goal was to use:
-- axios
-- context
-- grid
-- charts
-
 # What was used in this project?
 
 - axios
