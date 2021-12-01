@@ -14,6 +14,7 @@ It shows some basic informations:
 
 # What was used in this project?
 
+- [create-react-app](https://github.com/facebook/create-react-app)
 - axios
 - context api
 - css grid
