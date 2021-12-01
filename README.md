@@ -1,8 +1,8 @@
 # About the project
 
-Small web app that is used to search for github users.\
-It shows some basic informations:
+Small web app that shows basic information about specific github user.\
 
+It shows some basic informations:
 - amount of public repos
 - amount of followers
 - amount of people followed
@@ -12,18 +12,13 @@ It shows some basic informations:
 - chart of primary languages from 100 public repos
 - chart of top 5 starred languages
 
-# What have I learned?
+# What was used in this project?
 
-I learned alot while doing this project.\
-That was my first time working with external api.\
-My goal was to use:
-
+- [create-react-app](https://github.com/facebook/create-react-app)
 - axios
-- context
-- grid
-- charts
-
-and I used all of that!
+- context api
+- [chartjs](https://www.chartjs.org/)
+- [styled-components](https://styled-components.com/)
 
 # What would I change?
 
