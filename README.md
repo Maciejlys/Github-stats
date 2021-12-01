@@ -17,7 +17,6 @@ It shows some basic informations:
 - [create-react-app](https://github.com/facebook/create-react-app)
 - axios
 - context api
-- css grid
 - [chartjs](https://www.chartjs.org/)
 - [styled-components](https://styled-components.com/)
 
