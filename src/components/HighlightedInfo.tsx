@@ -3,7 +3,6 @@ import { AppContext } from "../context/context";
 import { GoRepo, GoGist } from "react-icons/go";
 import { FiUsers, FiUserPlus } from "react-icons/fi";
 import styled from "styled-components";
-import { TwoColumnsWrapper } from "../Styled-components/TwoColumnsWrapper";
 import { Flex } from "../Styled-components/Flex";
 
 interface HighlightedInfoProps {}
@@ -78,18 +77,18 @@ const Wrapper = styled.section`
   }
 
   @media (max-width: 500px) {
-    max-width: 40rem;
+    max-width: 25rem;
   }
   display: flex;
   justify-content: center;
-  gap: 2rem 3rem;
+  gap: 2rem 2rem;
   width: 100%;
   flex-wrap: wrap;
   > * {
     flex: 1 1 10%;
   }
   .item {
-    max-width: 70%;
+    max-width: 71%;
     border-radius: 0.25rem;
     padding: 1rem 2rem;
     background: #161b22;
