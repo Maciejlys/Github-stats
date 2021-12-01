@@ -1,3 +1,36 @@
+# About the project
+
+Small web app that is used to search for github users.
+It shows some basic informations:
+
+- amount of public repos
+- amount of followersMock
+- amount of people followed
+- gists
+- basic informations about users and
+- list of all followers
+- chart of primary languages from 100 public repos
+- chart of top 5 starred languages
+
+# What have I learned?
+
+I learned alot while doing this project.
+That was my first time working with external api.
+My goal was to use:
+
+- axios
+- context
+- grid
+- charts
+
+and I used all of that!
+
+# What would I change?
+
+I think I learned alot while doing this projcet, and thats why \
+if I had to redo it I would definitely make sure that my chart is\
+easier te reuse than it is in this project.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
