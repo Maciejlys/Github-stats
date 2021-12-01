@@ -7,21 +7,21 @@ export const Section = styled.div`
   flex-direction: column;
   border-radius: 0;
   background-color: #161b22;
-  height: 20rem;
+  height: 25rem;
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  position: relative;
 
   h4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    text-align: center;
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0.3rem;
+    top: 0px;
     background-color: #161b22;
     border-bottom: 1px solid white;
-    margin-bottom: 0.5rem;
   }
 
   ::-webkit-scrollbar {
