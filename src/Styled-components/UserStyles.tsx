@@ -65,9 +65,11 @@ export const Header = styled.header`
     width: auto;
     margin: 1rem;
   }
-  p {
+  p,
+  p:hover {
     width: 40%;
     padding: 0 0 0 1vw;
+    background-color: transparent;
   }
 
   align-items: center;
@@ -79,5 +81,6 @@ export const Header = styled.header`
   a .follow {
     color: #ffffff;
     border-radius: 0%;
+    background-color: transparent;
   }
 `;
