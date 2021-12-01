@@ -9,7 +9,7 @@ export const FollowerStyle = styled.div`
   border-radius: 1rem;
   padding: 1rem;
   width: 80%;
-  @media (max-width: 30rem) {
+  @media (max-width: 55rem) {
     gap: 0.5rem;
     flex-direction: column;
     align-items: center;

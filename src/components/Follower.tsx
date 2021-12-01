@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../context/context";
 import { FollowerStyle } from "../Styled-components/FollowerStyle";
 
 interface FollowerProps {
@@ -22,18 +23,15 @@ interface FollowerProps {
   site_admin: boolean;
 }
 
-export const Follower: React.FC<FollowerProps> = ({
-  avatar_url,
-  login,
-  html_url,
-}) => {
+export const Follower: React.FC<FollowerProps> = ({ avatar_url, login }) => {
+  const { searchGithubUser } = useContext(AppContext);
   return (
     <FollowerStyle>
       <img src={avatar_url} alt={login} />
       <p>{login}</p>
-      <a className="follow" href={html_url} target="_blank">
-        Follow
-      </a>
+      <button className="follow" onClick={() => searchGithubUser(login)}>
+        Search
+      </button>
     </FollowerStyle>
   );
 };

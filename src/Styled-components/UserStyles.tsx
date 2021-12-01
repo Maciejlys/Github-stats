@@ -54,6 +54,17 @@ export const Header = styled.header`
   display: flex;
   justify-content: center;
 
+  .svg {
+    background-color: transparent;
+  }
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    margin: 1rem;
+  }
   p {
     width: 40%;
     padding: 0 0 0 1vw;

@@ -5,6 +5,7 @@ import { Header, UserStyles } from "../Styled-components/UserStyles";
 import { MdLocationOn } from "react-icons/md";
 import { FaRegBuilding } from "react-icons/fa";
 import { BsLink } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
 
 export const User: React.FC = () => {
   const { user } = useContext(AppContext);
@@ -17,7 +18,8 @@ export const User: React.FC = () => {
           <img src={avatar_url} alt={name} />
           <p>{name || "John Doe"}</p>
           <a className="follow" href={html_url} target="_blank">
-            Follow
+            <AiFillGithub className="svg" />
+            <p>Github</p>
           </a>
         </Header>
         <div className="container">

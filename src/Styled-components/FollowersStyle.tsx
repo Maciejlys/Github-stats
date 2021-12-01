@@ -12,4 +12,7 @@ export const FollowersStyle = styled.div`
   height: 90%;
   padding: 0;
   margin-top: 1.5rem;
+  button {
+    border-radius: 0;
+  }
 `;
