@@ -4,7 +4,7 @@ Small web app that is used to search for github users.
 It shows some basic informations:
 
 - amount of public repos
-- amount of followersMock
+- amount of followers
 - amount of people followed
 - gists
 - basic informations about users and
