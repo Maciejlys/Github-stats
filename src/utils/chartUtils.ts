@@ -9,6 +9,25 @@ const getRandomColor = () => {
   const inside = "rgba(" + o(r) + "," + o(g) + "," + o(b) + "," + 0.5 + ")";
   return { border, inside };
 };
+export interface PieChartProps {
+  [key: string]: number;
+}
+export const arrToInstanceCountObj = (arr: string[]) =>
+  arr.reduce((obj: any, e) => {
+    obj[e] = (obj[e] || 0) + 1;
+    return obj;
+  }, {});
+export const getChartData = (lang: PieChartProps) => {
+  const labels = [];
+  const values = [];
+  for (const [key, value] of Object.entries(lang)) {
+    if (key != "null") {
+      labels.push(key);
+      values.push(value);
+    }
+  }
+  return { labels, values };
+};
 
 const getRandomColors = (numberOfColors: number) => {
   const colors = [];
