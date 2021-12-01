@@ -11,4 +11,5 @@ export const FollowersStyle = styled.div`
   width: 90%;
   height: 90%;
   padding: 0;
+  margin-top: 1.5rem;
 `;
