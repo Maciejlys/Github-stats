@@ -30,10 +30,8 @@ export const StarredChart: React.FC = () => {
         return a + b;
       }, 0)
     );
-    allProjects.sort((a, b) => {
-      var x = a.stargazers_count > b.stargazers_count ? -1 : 1;
-      return x;
-    });
+
+    allProjects.sort((a, b) => b.stargazers_count - a.stargazers_count);
 
     const data = getChartDataFromArr(allProjects.slice(0, 5));
 

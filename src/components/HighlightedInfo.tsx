@@ -42,9 +42,9 @@ export const HighlightedInfo: React.FC = () => {
   return (
     <Flex>
       <Wrapper className="section-center">
-        {items.map((item) => {
-          return <Item key={item.id} {...item}></Item>;
-        })}
+        {items.map((item) => (
+          <Item key={item.id} {...item} />
+        ))}
       </Wrapper>
     </Flex>
   );
