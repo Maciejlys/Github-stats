@@ -27,8 +27,10 @@ export const Follower: React.FC<FollowerProps> = ({ avatar_url, login }) => {
   const { searchGithubUser } = useContext(AppContext);
   return (
     <FollowerStyle>
-      <img src={avatar_url} alt={login} />
-      <p>{login}</p>
+      <div>
+        <img src={avatar_url} alt={login} />
+        <p>{login}</p>
+      </div>
       <button className="follow" onClick={() => searchGithubUser(login)}>
         Search
       </button>

@@ -8,6 +8,7 @@ export const UserStyles = styled.article`
   background-color: #161b22;
   width: 100%;
   height: 100%;
+  padding: 1rem;
 
   .container {
     display: grid;
@@ -18,6 +19,7 @@ export const UserStyles = styled.article`
       "two"
       "three"
       "four";
+    padding: 1rem;
   }
   .bio {
     grid-area: one;
@@ -53,6 +55,7 @@ export const Header = styled.header`
   height: 40%;
   display: flex;
   justify-content: center;
+  padding: 1rem;
 
   .svg {
     background-color: transparent;

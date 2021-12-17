@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 body{
     background-color: #0d1117;
     color: white;
+    box-sizing: border-box;
 }
 img {
     width: 75px;

@@ -3,9 +3,12 @@ import styled from "styled-components";
 export const SearchBarStyles = styled.div`
   width: 100%;
   h1 {
-    margin-left: 2rem;
     font-weight: 400;
+    @media (min-width: 900px) {
+      margin-left: 2rem;
+    }
   }
+
   input {
     width: 50vw;
     min-width: 50%;
